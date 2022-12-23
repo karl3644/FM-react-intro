@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Components
 import SearchParams from "./SearchParams";
@@ -8,7 +8,10 @@ import Details from "./Details";
 const App = () => {
   return (
     <BrowserRouter>
-      <h1>Adopt me. V8</h1>
+      <header>
+        <Link to="/">Adopt Me!</Link>
+      </header>
+      {/* <h1>Adopt me. V8</h1> */}
       <Routes>
         <Route path="/details/:id" element={<Details />}></Route>
         <Route path="/" element={<SearchParams />}></Route>
