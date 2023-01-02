@@ -25,3 +25,5 @@ Project created from front end masters course.
 - useRef. like a container to give yourself back the same thing every time. etc can add/remove a div from the dom but it uses the same div every time
 - unmount. use return in useEffect to run a function when the component unmounts. used for clear up. removing event listeners, timers, dom nodes
 - createPortal. render children into a dom node that exists outside the dom hierarchy. can pick up on event listeners even though it is in a different part of the app
+- context. app wide general state. wrap components in provider to use. have option to read and write from different parts of the app
+- useNavigate. programmatically navigate someone. (opposed to Link which is like an anchor element)
