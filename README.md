@@ -20,4 +20,4 @@ Project created from front end masters course.
 - FormData is browser api to get form data on submit
 - class component (no hooks allowed, default props, state)
 - arrow functions capture scope where it was invoked as opposed to normal function declaration. more important when using the .this keyword
-- - unary coerces string into number
+- \+ unary coerces string into number
