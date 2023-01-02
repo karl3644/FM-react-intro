@@ -21,3 +21,4 @@ Project created from front end masters course.
 - class component (no hooks allowed, default props, state)
 - arrow functions capture scope where it was invoked as opposed to normal function declaration. more important when using the .this keyword
 - \+ unary coerces string into number
+- error boundary. can only use a class component. instantiate using `static getDerivedStateFromError` or `componentDidCatch`. this wraps component. could stop app crash and show error instead
