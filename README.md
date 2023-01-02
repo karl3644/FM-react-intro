@@ -22,3 +22,6 @@ Project created from front end masters course.
 - arrow functions capture scope where it was invoked as opposed to normal function declaration. more important when using the .this keyword
 - \+ unary coerces string into number
 - error boundary. can only use a class component. instantiate using `static getDerivedStateFromError` or `componentDidCatch`. this wraps component. could stop app crash and show error instead
+- useRef. like a container to give yourself back the same thing every time. etc can add/remove a div from the dom but it uses the same div every time
+- unmount. use return in useEffect to run a function when the component unmounts. used for clear up. removing event listeners, timers, dom nodes
+- createPortal. render children into a dom node that exists outside the dom hierarchy. can pick up on event listeners even though it is in a different part of the app
