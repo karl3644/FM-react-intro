@@ -4,6 +4,8 @@ Project created from front end masters course.
 
 ## What has been covered
 
+## Intro to react
+
 - Set up react app from scratch without npx create react app (eslintrc.json, prettier.rc, package.json, vite.config.js can be used for future projects)
 - use vite as compiler
 - dev deps vs production deps (dev - prettier, eslint, prod - react router, router dom)
@@ -27,3 +29,12 @@ Project created from front end masters course.
 - createPortal. render children into a dom node that exists outside the dom hierarchy. can pick up on event listeners even though it is in a different part of the app
 - context. app wide general state. wrap components in provider to use. have option to read and write from different parts of the app
 - useNavigate. programmatically navigate someone. (opposed to Link which is like an anchor element)
+
+## Intermediate React
+
+- useRef. common use case to access a child imperatively. useRef is like a box that can hold a mutable value in its .current property.
+- useReducer. similar to useState and how redux works. good for if there is complex state management and you need state which depends on previous state.
+- useMemo. pass a create function and a dependency array. will also recompute when one of the dependencies has changes. used for performance optimization
+- useCallback. similar to useMemo. return a memoized callback
+- useLayoutEffect. similar to useEffect but fires synchronously after all DOM mutations. use to read layout from the DOM. updates before browser paints
+- useId. for generating IDs which are stable across client/server. not to be used for mapped keys etc. can be linked with appended suffix e.g `{id + -'firstname}, {id + -'surname}`
