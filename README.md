@@ -32,9 +32,22 @@ Project created from front end masters course.
 
 ## Intermediate React
 
+### Hooks
+
 - useRef. common use case to access a child imperatively. useRef is like a box that can hold a mutable value in its .current property.
 - useReducer. similar to useState and how redux works. good for if there is complex state management and you need state which depends on previous state.
 - useMemo. pass a create function and a dependency array. will also recompute when one of the dependencies has changes. used for performance optimization
 - useCallback. similar to useMemo. return a memoized callback
 - useLayoutEffect. similar to useEffect but fires synchronously after all DOM mutations. use to read layout from the DOM. updates before browser paints
 - useId. for generating IDs which are stable across client/server. not to be used for mapped keys etc. can be linked with appended suffix e.g `{id + -'firstname}, {id + -'surname}`
+
+### Code splitting
+
+- use lazy loading to load a component/route only when it has been requested. use for large kbs sizes mainly.
+- use the Suspense react component to show fallback until lazy loads.
+
+### Server side rendering
+
+- loads initial page whilst JS and app loads in background. create component with import hydrateRoot and BrowserRouter and APP. place both inside hydrateRoot. change index html App src to ClientApp, remove BrowserRouter, ReactDom, root, rootRender from App and export App.
+
+pickup at node stream with express 03:25
