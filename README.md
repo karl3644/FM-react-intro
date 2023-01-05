@@ -54,3 +54,7 @@ Project created from front end masters course.
 
 - useDeferredValue. use if there is expensive to render, could be delayed and user is perceiving slowdown. use alongside useMemo to hold value and reupdate once deferred value has changed. defer a heaving loading component
 - useTransition. when requesting something that is low priority. have react provide at own speed. anticipating a heavy loading component.
+
+## Redux
+
+(see newer repo)
