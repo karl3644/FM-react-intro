@@ -51,3 +51,8 @@ Project created from front end masters course.
 - loads initial page whilst JS and app loads in background. create component with import hydrateRoot and BrowserRouter and APP. place both inside hydrateRoot. change index html App src to ClientApp, remove BrowserRouter, ReactDom, root, rootRender from App and export App.
 
 pickup at node stream with express 03:25
+
+### Low priority re-rendering
+
+- useDeferredValue. use if there is expensive to render, could be delayed and user is perceiving slowdown. use alongside useMemo to hold value and reupdate once deferred value has changed. defer a heaving loading component
+- useTransition. when requesting something that is low priority. have react provide at own speed. anticipating a heavy loading component.
