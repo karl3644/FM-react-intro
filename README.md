@@ -48,9 +48,7 @@ Project created from front end masters course.
 
 ### Server side rendering
 
-- loads initial page whilst JS and app loads in background. create component with import hydrateRoot and BrowserRouter and APP. place both inside hydrateRoot. change index html App src to ClientApp, remove BrowserRouter, ReactDom, root, rootRender from App and export App.
-
-pickup at node stream with express 03:25
+- loads initial page whilst JS and app loads in background.
 
 ### Low priority re-rendering
 
