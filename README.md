@@ -49,7 +49,16 @@ Project created from front end masters course.
 
 ### Server side rendering
 
-- loads initial page whilst JS and app loads in background. create component with import hydrateRoot and BrowserRouter and APP.
+- loads initial page whilst JS and app loads in background.
+
+### Low priority re-rendering
+
+- useDeferredValue. use if there is expensive to render, could be delayed and user is perceiving slowdown. use alongside useMemo to hold value and reupdate once deferred value has changed. defer a heaving loading component
+- useTransition. when requesting something that is low priority. have react provide at own speed. anticipating a heavy loading component.
+
+## Redux
+
+(see newer repo)
 
 ## Testing
 
