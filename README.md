@@ -69,7 +69,7 @@ Project created from front end masters course.
 - Testing where if something is given a value, does it return the correct value (pet.test.jsx)
 - testing user interaction (carousel.test.jsx)
 - testing custom hooks (useBreedList.test.jsx). hooks only work inside a react component so you have to create a react component. call the hook inside another component and return the value to bypass
-- updated useBreedList.test to
+- updated useBreedList.test to generic testCustomHook
 
 # bug examples from this app
 
