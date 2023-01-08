@@ -1,5 +1,6 @@
 # Notes
 
+course - https://react-v8.holt.courses/
 Project created from front end masters course.
 
 ## What has been covered
@@ -49,3 +50,19 @@ Project created from front end masters course.
 ### Server side rendering
 
 - loads initial page whilst JS and app loads in background. create component with import hydrateRoot and BrowserRouter and APP.
+
+## Testing
+
+- install vitest (based on jest) testing library and happy-dom
+- happy dom faster than jsDOM
+- try to tell user stories through tests. think in user terms of what they would want to see when interacting
+- **test** folder name is seen by vitest and everything in there is assumed to be a test. Can also name files by using filename.spec/filename.spec. run test by `npm t`
+- Testing where if something is given a value, does it return the correct value (pet.test.jsx)
+- testing user interaction (carousel.test.jsx)
+- testing custom hooks (useBreedList.test.jsx). hooks only work inside a react component so you have to create a react component. call the hook inside another component and return the value to bypass
+- updated useBreedList.test to
+
+# bug examples from this app
+
+1. `images.length` will fail if no array is passed in. changed to `images && images.length`
+2. useHref() may be used only in the context of a <Router> component. Using <Link> tag without a router. Put static router in test file. (Static router works in node and not a browser env)
