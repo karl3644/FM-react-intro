@@ -78,3 +78,5 @@ Project created from front end masters course.
 
 - creating mocks. if testing a component which uses API request. instead of hitting API request you can mock the fetch. npm i -D vitest-fetch-mock. the file created setupVitest.js will run before all other tests are run
 - snapshots. smaller tests to write. will output html in snapshots folder and you can rerun to compare to previous results. change .toMatchSnapshot to .toMatchInlineSnapshot to have output in same file. can change data to compare e.g pass in JSON data instead of fragment. valid use case - is JSON same between front end and back end?
+- testing coverage. added run test:coverage which (installs c8) generates a report to show testing coverage of tests written. adds coverage folder which includes html file. c8 built into node.js
+- (specific to vscode) vitest extension. 3 test scripts in package. runs once, runs watch (extension) and coverage which generates report.
