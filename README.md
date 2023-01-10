@@ -3,6 +3,8 @@
 course - https://react-v8.holt.courses/
 Project created from front end masters course.
 
+Redux and Typescript sections on separate repos
+
 ## What has been covered
 
 ## Intro to react
